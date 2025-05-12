@@ -16,5 +16,5 @@ def test_Sample2():
     assert a>b
 
 @pytest.mark.parametrize("test_input,expectes",[(1,3),[3,6],[5,7]])
-def test_addition(test_input,expectejjjs):
-    assert test_input + 2 == expectes
+def test_addition(test_input,expects):
+    assert test_input + 2 == expects
