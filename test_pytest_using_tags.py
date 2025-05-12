@@ -11,14 +11,11 @@ def test(browser,url):
     if(browser == "Chrome"):
         driver = webdriver.Chrome()
     if(browser == "Firefox"):
-
-        
         driver = webdriver.Firefox()
     driver.get(url)
     print("url: ",driver.current_url)
-    \
     driver.quit()
-
+#for start
 @pytest.fixture()
 def basic():
     global driver
