@@ -15,7 +15,8 @@ def test(browser,url):
     driver.get(url)
     print("url: ",driver.current_url)
     driver.quit()
-#for start
+
+#for startjj
 @pytest.fixture()
 def basic():
     global driver
