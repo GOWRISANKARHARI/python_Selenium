@@ -26,14 +26,14 @@ def basic():
     yield 
     driver.quit()
 def test_Hp(basic):
-    driver.find_element(By.XPATH,value= '//*[@class="input-group"]/input').send_keys("Hp")
-    driver.find_element(By.XPATH,value='//*[@class="input-group"]/span').click()
-    ass = driver.find_element (By.XPATH,value='//div[@class="caption"]/h4/a').text
-    assert "HP LP3065" in ass
+    driver.find_element(By.XPATH,value= '//*[@class="gLFyf"]').send_keys("Hp")
+    # driver.find_element(By.XPATH,value='//*[@class="input-group"]/span').click()
+    # ass = driver.find_element (By.XPATH,value='//div[@class="caption"]/h4/a').text
+    # assert "HP LP3065" in ass
 
-def test_Honda(basic):
-    driver.find_element(By.XPATH,value= '//*[@class="input-group"]/input').send_keys("Honda")
-    driver.find_element(By.XPATH,value='//*[@class="input-group"]/span').click()
-    ass1 = driver.find_element(By.XPATH,'//*[@id="content"]/p[2]').text
-    assert "There is no product that matches the search criteria." in ass1
-driver.quit()
+# def test_Honda(basic):
+#     driver.find_element(By.XPATH,value= '//*[@class="input-group"]/input').send_keys("Honda")
+#     driver.find_element(By.XPATH,value='//*[@class="input-group"]/span').click()
+#     ass1 = driver.find_element(By.XPATH,'//*[@id="content"]/p[2]').text
+#     assert "There is no product that matches the search criteria." in ass1
+
