@@ -12,5 +12,4 @@ class TestLogin:
         self.driver.find_element(By.ID,value="loginpassword").send_keys(password)
         self.driver.find_element(By.XPATH,value="//button[text()='Log in']").click()
         time.sleep(5)
-        #i am there
         assert self.driver.find_element(By.ID,value="logout2").is_displayed()
